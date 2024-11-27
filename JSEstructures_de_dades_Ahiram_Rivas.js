@@ -13,3 +13,14 @@ const exercici1 = () => {
 };
 
 exercici1();
+
+//2.- Utilitza l’operador de propagació per crear un altre array usant els valors de l’exercici anterior
+
+const exercici2 = () => {
+    const original = [3, 1, 4, 1, 5];
+    const copia = [...original]; // Spread Operator
+    console.log('Array original:', original);
+    console.log('Nou array (còpia):', copia);
+};
+
+exercici2();
