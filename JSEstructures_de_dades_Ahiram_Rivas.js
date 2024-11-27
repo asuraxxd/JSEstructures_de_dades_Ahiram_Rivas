@@ -50,3 +50,24 @@ const exercici4 = () => {
 };
 
 exercici4();
+
+//5.- Codifica la funció map d’una Array perquè en creï una nova amb el valor cúbic de cada número.
+// Exemple: [1, 3, 6] => [1, 27, 216]
+
+const exercici5 = () => {
+    const numeros = [1, 3, 6];
+
+    // Implementació de `map`
+    const mapPersonalitzat = (array, callback) => {
+        const resultat = [];
+        for (const element of array) {
+            resultat.push(callback(element));
+        }
+        return resultat;
+    };
+
+    const cubs = mapPersonalitzat(numeros, num => Math.pow(num, 3)); // Valor cúbic
+    console.log('Valors cúbics:', cubs);
+};
+
+exercici5();
