@@ -122,3 +122,25 @@ const exercici8 = () => {
 };
 
 exercici8();
+
+//9.- Crea una Cua d’Objectes amb dades de 3 pel·lícules. Itera la cua per mostrar per pantalla la
+// pel·lícula més antiga.
+
+const exercici9 = () => {
+    const cua = [
+        { titol: 'Pulp Fiction', any: 1994 },
+        { titol: 'The Godfather', any: 1972 },
+        { titol: 'Inception', any: 2010 }
+    ];
+
+    let mesAntiga = cua[0];
+    for (const pelicula of cua) {
+        if (pelicula.any < mesAntiga.any) {
+            mesAntiga = pelicula;
+        }
+    }
+
+    console.log('Pel·lícula més antiga:', mesAntiga);
+};
+
+exercici9();
