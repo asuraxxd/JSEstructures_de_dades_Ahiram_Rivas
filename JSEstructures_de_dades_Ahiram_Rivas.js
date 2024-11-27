@@ -101,3 +101,24 @@ const exercici7 = () => {
 };
 
 exercici7();
+
+//8.- Donada una paraula, insereix cada caràcter dins d’una cua. Extreu ara de la cua els caràcters un a
+// un per poder decidir si és un palíndrom o no.
+
+const exercici8 = () => {
+    const paraula = 'radar';
+    const cua = [...paraula]; // Afegir caràcters a la cua
+
+    let inversa = '';
+    while (cua.length) {
+        inversa += cua.pop(); // Extreure de la cua
+    }
+
+    if (paraula === inversa) {
+        console.log(`${paraula} és un palíndrom.`);
+    } else {
+        console.log(`${paraula} no és un palíndrom.`);
+    }
+};
+
+exercici8();
