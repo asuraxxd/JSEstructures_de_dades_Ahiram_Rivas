@@ -38,3 +38,15 @@ const exercici3 = () => {
 };
 
 exercici3();
+
+//4.- Modifica l’exercici anterior per utilitzar una estructura que no permeti duplicats.
+
+const exercici4 = () => {
+    const array1 = [1, 2, 3, 4];
+    const array2 = [3, 4, 5, 6];
+
+    const senseDuplicats = [...new Set([...array1, ...array2])]; // Fusió amb `Set`
+    console.log('Set sense duplicats:', senseDuplicats);
+};
+
+exercici4();
