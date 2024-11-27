@@ -71,3 +71,18 @@ const exercici5 = () => {
 };
 
 exercici5();
+
+//6.- A partir d’una array de strings, es creï una nova amb aquelles que tinguin més d’una lletra ‘a’
+
+const exercici6 = () => {
+    const paraules = ['casa', 'paret', 'sala', 'motor', 'camarera'];
+
+    const filtrades = paraules.filter(paraula => {
+        const comptadorA = paraula.split('').filter(char => char === 'a').length;
+        return comptadorA > 1;
+    });
+
+    console.log('Paraules amb més d\'una "a":', filtrades);
+};
+
+exercici6();
