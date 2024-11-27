@@ -24,3 +24,17 @@ const exercici2 = () => {
 };
 
 exercici2();
+
+//3.- Fusiona dos arrays i esborren els valors duplicats (no utilitzis el Set).
+
+const exercici3 = () => {
+    const array1 = [1, 2, 3, 4];
+    const array2 = [3, 4, 5, 6];
+
+    const fusionat = [...array1, ...array2]; // Fusionar
+    const senseDuplicats = fusionat.filter((item, index) => fusionat.indexOf(item) === index); // Eliminar duplicats
+
+    console.log('Array fusionat sense duplicats:', senseDuplicats);
+};
+
+exercici3();
