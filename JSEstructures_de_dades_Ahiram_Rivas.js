@@ -86,3 +86,18 @@ const exercici6 = () => {
 };
 
 exercici6();
+
+//7.- Crea una estructura Map i insereix 3 claus – valor. Les 3 claus han de ser de tipus de dades
+// diferents. Et deixa?
+
+const exercici7 = () => {
+    const mapa = new Map();
+
+    mapa.set(1, 'Enter');
+    mapa.set('clau', 'String');
+    mapa.set(3.14, 'Double');
+
+    console.log('Mapa:', mapa);
+};
+
+exercici7();
